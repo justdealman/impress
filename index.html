@@ -18,7 +18,7 @@
 			<img src="./img/logo.png" width="192" height="83" alt="">
 			<h5><a href="#">Вход в личный кабинет</a></h5>
 			<ul class="menu">
-				<li data-menuanchor="about"><a href="#about">О компании</a></li>
+				<!--<li data-menuanchor="about"><a href="#about">О компании</a></li>-->
 				<li data-menuanchor="package"><a href="#package">Этикетка и упаковка</a></li>
 				<li data-menuanchor="technology"><a href="#technology">Технология печати</a></li>
 				<li data-menuanchor="services"><a href="#services">Услуги</a></li>
@@ -189,7 +189,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="section video">
+		<!--<div class="section video">
 			<div class="inner">
 				<img src="./pic/big.png" width="905" height="381" alt="">
 				<div>
@@ -198,7 +198,7 @@
 				</div>
 			</div>
 			<span class="play"></span>
-		</div>
+		</div>-->
 		<div class="section package">
 			<div class="core">
 				<h2><strong>Этикетка</strong> и упаковка</h2>
@@ -427,7 +427,8 @@
 					map = DG.map('map', {
 						center: [54.983, 82.89],
 						zoom: 15,
-						closePopupOnClick: false
+						closePopupOnClick: false,
+						scrollWheelZoom: false
 					});
 					DG.popup().setLatLng([54.98, 82.89]).setContent('<p class="address">656037, г. Барнаул, проспект Калинина, 116/44</p><p class="phone">8 (3852) 28 28 03 (многоканальный)</p><p class="email"><a href="mailto:label@rssib.ru">label@rssib.ru</a></p>').openOn(map);
 				});

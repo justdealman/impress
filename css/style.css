@@ -1261,3 +1261,9 @@ header .menu li.active a {
 .leaflet-popup-content-wrapper p.email {
 	background:url('../img/email_icon.png') no-repeat left 8px;
 }
+.dg-control-round {
+	margin-top:117px !important;
+}
+.dg-zoom {
+	margin-top:0 !important;
+}

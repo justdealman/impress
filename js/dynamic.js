@@ -29,7 +29,7 @@
 		slideSpeed: 500,
 		slideEasing: 'easeInOutQuad',
 		play: 10000,
-		pause: 0
+		pause: -1
 	});
 	$('.slider').bind('swipeleft', function() {
 		$('.slider .next').trigger('click');
@@ -101,7 +101,7 @@ $(document).ready(function() {
 		$('.wrapper').fullpage({
 			css3: true,
 			scrollingSpeed: 1000,
-			anchors: ['welcome', 'about', 'package', 'technology', 'extra', 'services', 'news', 'providers', 'contacts'],
+			anchors: ['welcome', 'package', 'technology', 'extra', 'services', 'news', 'providers', 'contacts'],
 			menu: '.menu'
 		});
 		$.fn.fullpage.reBuild();
