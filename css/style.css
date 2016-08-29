@@ -1267,3 +1267,108 @@ header .menu li.active a {
 .dg-zoom {
 	margin-top:0 !important;
 }
+.about-i {
+	clear:both;
+	overflow:hidden;
+	width:1280px;
+	height:271px;/* !!!  */
+	color:#000000;
+    font-family:'Blogger Sans', sans-serif;
+	padding:53px 0 28px 111px;
+	margin:0 auto;
+	-moz-box-shadow:border-box;
+	-webkit-box-shadow:border-box;
+	box-sizing:border-box;
+}
+.about-i > div {
+	float:left;
+	width:478px;
+	margin:0 0 0 111px;
+}
+.about-i > div:first-child {
+	margin-left:0;
+}
+.about-i h4 {
+	width:482px;
+	font-size:13px;
+	line-height:18px;
+	padding:0;
+	margin:-14px 0 14px;
+}
+.about-i h4 span {
+	position:relative;
+	float:left;
+	display:block;
+	padding:0 24px 0 0;
+	margin:-3px 10px 0 0;
+}
+.about-i h4 span:after {
+	content:'';
+	position:absolute;
+	right:0;
+	top:5px;
+	width:3px;
+	height:calc(100% - 17px);
+	background:#ffab6c;
+}
+.about-i h4 img {
+	margin:0 0 -4px;
+}
+.about-i p {
+	font-size:16px;
+	line-height:18px;
+	text-align:justify;
+	margin:0;
+}
+.benefits-b .core {
+	width:1240px;
+	text-align:center;
+	padding:70px 0 50px;
+	margin:0 auto;
+	-moz-box-shadow:border-box;
+	-webkit-box-shadow:border-box;
+	box-sizing:border-box;
+}
+.benefits-b h2 {
+	font-size:32px;
+	line-height:36px;
+	font-weight:normal;
+	font-family:'Blogger Sans', sans-serif;
+	text-align:center;
+	text-transform:uppercase;
+	margin:0 0 29px;
+}
+.benefits-b ul {
+	text-align:center;
+	margin:0 0 -17px;
+}
+.benefits-b ul li {
+	display:inline-block;
+	width:223px;
+	vertical-align:top;
+	margin:0 53px 17px 54px;
+}
+.benefits-b ul li div {
+	position:relative;
+	width:183px;
+	height:185px;
+	margin:0 auto 6px;
+	background:url('../img/benefits-b-bg.png') no-repeat center center;
+}
+.benefits-b ul li div img {
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	max-width:183px;
+	max-height:185px;
+	margin:auto;
+}
+.benefits-b ul li p {
+	color:#000000;
+	font-size:18px;
+	line-height:22px;
+	font-family:'Blogger Sans', sans-serif;
+	margin:0;
+}

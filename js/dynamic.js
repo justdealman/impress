@@ -1,6 +1,6 @@
 ﻿function intro() {
 	var s = $('.section').outerHeight()-$('header').outerHeight();
-	var h = s-$('.introduction > h4').outerHeight()-$('.introduction .benefits').outerHeight();
+	var h = s-$('.introduction > h4').outerHeight()-$('.introduction .about-i').outerHeight();
 	if ( h < 300 ) {
 		h = 300;
 	}
@@ -120,7 +120,7 @@ $(document).ready(function() {
 		$('.wrapper').fullpage({
 			css3: true,
 			scrollingSpeed: 1000,
-			anchors: ['welcome', 'package', 'technology', 'extra', 'services', 'news', 'providers', 'contacts'],
+			anchors: ['welcome', 'benefits', 'package', 'technology', 'extra', 'services', 'news', 'providers', 'contacts'],
 			menu: '.menu'
 		});
 		$.fn.fullpage.reBuild();
