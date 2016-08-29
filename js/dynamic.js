@@ -21,6 +21,15 @@
 		$('.slider, .slider .container, .slider .container > div').height(h);
 	}
 	$('.slider, .slider .container, .slider .container > div').width($('.wrapper').width());
+	var customSpeed = {
+		1: 20000,
+		2: 15000,
+		3: 16000,
+		4: 17000,
+		5: 17000,
+		6: 7000,
+		7: 19000
+	}
 	$('.slider').slides({
 		generatePagination: true,
 		generateNextPrev: true,
@@ -28,8 +37,18 @@
 		effect: 'slide',
 		slideSpeed: 500,
 		slideEasing: 'easeInOutQuad',
-		play: 10000,
-		pause: -1
+		play: 0,
+		pause: -1,
+		slidesLoaded: function() {
+			setTimeout(function() {
+				$('.slider .next').trigger('click');
+			}, customSpeed[1]);
+		},
+		animationComplete: function(current) {
+			setTimeout(function() {
+				$('.slider .next').trigger('click');
+			}, customSpeed[current]);
+		}
 	});
 	$('.slider').bind('swipeleft', function() {
 		$('.slider .next').trigger('click');
@@ -120,6 +139,9 @@ $(document).ready(function() {
 	}
 	if ( $('.introduction').length > 0 ) {
 		intro();
+		/*setTimeout(function() {
+			$('.slider .pagination').trigger('click');
+		}, customSpeed[1]);*/
 	}
 	$('.section.video').bind('click', function() {
 		console.log('Video click trigger');
